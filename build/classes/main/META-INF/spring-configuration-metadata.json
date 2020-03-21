@@ -1,0 +1,104 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.guoanfamily.palmsale.config.MsgSettings",
+      "name": "guoanfamily.msg",
+      "type": "com.guoanfamily.palmsale.config.MsgSettings"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.JwtSettings",
+      "name": "guoanfamily.security.jwt",
+      "type": "com.guoanfamily.palmsale.security.config.JwtSettings"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.TokenConfigUrlSettings",
+      "name": "guoanfamily.security.urlConfig",
+      "type": "com.guoanfamily.palmsale.security.config.TokenConfigUrlSettings"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.config.UrlSettings",
+      "name": "guoanfamily.url",
+      "type": "com.guoanfamily.palmsale.config.UrlSettings"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.guoanfamily.palmsale.config.MsgSettings",
+      "defaultValue": "121638",
+      "name": "guoanfamily.msg.epid",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.config.MsgSettings",
+      "defaultValue": "Gadc836121",
+      "name": "guoanfamily.msg.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.config.MsgSettings",
+      "defaultValue": "xzgadc",
+      "name": "guoanfamily.msg.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.JwtSettings",
+      "name": "guoanfamily.security.jwt.refresh-token-exp-time",
+      "description": "{@link JwtToken} can be refreshed during this timeframe.",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.JwtSettings",
+      "name": "guoanfamily.security.jwt.token-expiration-time",
+      "description": "{@link JwtToken} will expire after this time.",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.JwtSettings",
+      "name": "guoanfamily.security.jwt.token-issuer",
+      "description": "Token issuer.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.JwtSettings",
+      "name": "guoanfamily.security.jwt.token-signing-key",
+      "description": "Key is used to sign {@link JwtToken}.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.TokenConfigUrlSettings",
+      "name": "guoanfamily.security.urlConfig.check-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.TokenConfigUrlSettings",
+      "name": "guoanfamily.security.urlConfig.header-param",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.TokenConfigUrlSettings",
+      "name": "guoanfamily.security.urlConfig.login-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.TokenConfigUrlSettings",
+      "name": "guoanfamily.security.urlConfig.non-check-url",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.security.config.TokenConfigUrlSettings",
+      "name": "guoanfamily.security.urlConfig.token-refresh",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.config.UrlSettings",
+      "name": "guoanfamily.url.qiniu-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.guoanfamily.palmsale.config.UrlSettings",
+      "name": "guoanfamily.url.upload-path",
+      "type": "java.lang.String"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.wenhao:jpa-spec:3.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.wenhao/jpa-spec/3.1.0/592bd129eb435f6d16ac8c79af80ad2f3c0d0468/jpa-spec-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.wenhao/jpa-spec/3.1.0/9ee392a46b05d5c2398c5b5e828e1ae112d31b65/jpa-spec-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

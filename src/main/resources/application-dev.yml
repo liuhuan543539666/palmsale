@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    name: mydb
+    type: com.zaxxer.hikari.HikariDataSource
+    #url: jdbc:mysql://172.16.4.12:3306/guoanjia2_1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=false&serverTimezone=GMT%2b8
+    #url: jdbc:mysql://localhost:3306/gack?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=false&serverTimezone=GMT%2b8
+    #username: root
+    #password:
+    url: jdbc:mysql://rm-2ze2y2k3554s14j47o.mysql.rds.aliyuncs.com/guoanjia?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=false&serverTimezone=GMT%2b8
+    username: guoanjia
+    password: Guoanjia123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+
+web:
+  upload-path: D://img

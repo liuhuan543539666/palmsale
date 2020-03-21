@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/palmsale.iml" filepath="$PROJECT_DIR$/.idea/modules/palmsale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/palmsale_main.iml" filepath="$PROJECT_DIR$/.idea/modules/palmsale_main.iml" group="palmsale" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/palmsale_test.iml" filepath="$PROJECT_DIR$/.idea/modules/palmsale_test.iml" group="palmsale" />
+    </modules>
+  </component>
+</project>

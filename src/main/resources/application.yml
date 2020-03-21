@@ -1,0 +1,44 @@
+spring:
+  # Jackson组件配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  hikari :
+    connection-timeout: 60000
+    maximum-pool-size: 5
+  session:
+    store-type: none
+  jpa:
+    show-sql: true
+  profiles:
+      active: dev
+
+server:
+  port: 8001
+
+logging:
+  file: partnermanager_api.log
+  level:
+    com:
+      guoanfamily: debug
+
+guoanfamily:
+  security:
+    jwt:
+      tokenExpirationTime: 1440 # Number of minutes
+      refreshTokenExpTime: 2880 # Minutes
+      tokenIssuer: http://www.guoanfamily.com
+      tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
+    urlConfig:
+      loginUrl: /api/auth/login
+      tokenRefresh: /api/auth/token
+      checkUrl: /api/**
+      nonCheckUrl: ['register/save','/api/v1/user/loginCaptach','/api/file/**']
+      headerParam: Authorization
+  msg:
+    username: xzgadc
+    password: Gadc836121
+    epid: 121638
+  url:
+    qiniuUrl: http://img.guoanfamily.com
+    uploadPath: d:\\img\

@@ -1,0 +1,58 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.3.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+
+dependencies {
+	compile (group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.4')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-aop')
+    compile('org.springframework.boot:spring-boot-configuration-processor')
+    compile('com.zaxxer:HikariCP')
+    compile('io.jsonwebtoken:jjwt:0.7.0')
+    compile('joda-time:joda-time:2.9.9')
+    compile('com.fasterxml.jackson.core:jackson-databind:2.8.8')
+    compile('com.fasterxml.jackson.core:jackson-core:2.8.8')
+    compile('com.fasterxml.jackson.core:jackson-annotations:2.8.8')
+    compile('org.apache.commons:commons-lang3:3.5')
+    compile("io.springfox:springfox-swagger2:2.6.1")
+    compile("io.springfox:springfox-swagger-ui:2.6.1")
+    compile 'com.github.wenhao:jpa-spec:3.1.0'
+    compile group: 'com.qiniu', name: 'qiniu-java-sdk', version: '7.2.5'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    runtime('mysql:mysql-connector-java')
+    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile 'com.github.wenhao:jpa-spec:3.1.0'
+    // 代码生成器所需jar
+    compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
+    compile group: 'commons-io', name: 'commons-io', version: '2.4'
+    // beanUtils
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+    //excel
+    compile group: 'org.apache.poi', name: 'poi', version: '3.16'
+
+}

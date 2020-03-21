@@ -1,0 +1,40 @@
+package ${package}.entity;
+
+import com.guoanfamily.palmsale.annotation.Excel;
+import java.io.Serializable;
+import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import lombok.Data;
+import com.guoanfamily.palmsale.common.abstractobj.IdEntity;
+
+#if(${hasBigDecimal})
+import java.math.BigDecimal;
+#end
+
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @version ${version}
+ * @date ${datetime}
+ */
+@Data
+@Entity
+@Table(name="${tableName}")
+public class ${className}Entity extends IdEntity implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+#foreach ($column in $columns)
+    #if($column.attrname ==  'id')
+    #else
+
+   /**
+    *$column.comments
+    */
+    @Excel(name = "$column.comments", ref = "$column.attrname")
+    private $column.attrType $column.attrname;
+    #end
+#end
+}
